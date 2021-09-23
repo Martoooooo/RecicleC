@@ -1,5 +1,7 @@
 h2{
     font-size: 2.5rem;
+    background-color: rgba(3, 212, 150, 0.315);
+    ;
 }
 .natan{
     display: flex;
