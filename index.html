@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="js/javascript.js">
+    <script defer src="js/javascript.js"></script>
 
 </head>
 
@@ -57,19 +57,41 @@
         </div>
         <main class="mdl-layout__content">
 
-            <div class= "natan">
+            <div class="introducao">
                 <h1>Quem somos</h1>
-                <h2>A RecicleC é um meio de as pessoas se conectarem para compartilhar ideias e manterem mais uma parcela do nosso planeta o mais limpa possível, 
-                    mostrando lugares corretos para descartes especiais, permitindo compartilhamento de DIYs e uma loja virtual para os mesmos, podendo servir de 
-                    incentivo até para pequenos artistas e comerciantes.
-                </h2>   
+                <h2>A RecicleC é um meio de as pessoas se conectarem para compartilhar ideias e manterem mais uma parcela do nosso planeta o mais limpa possível, mostrando lugares corretos para descartes especiais, permitindo compartilhamento de DIYs e uma
+                    loja virtual para os mesmos, podendo servir de incentivo até para pequenos artistas e comerciantes.
+
+                </h2>
             </div>
             
+            <div class= "divisaoTela">
+                <div>
+                    <h4> Ja possui uma conta? </h4>
+                </div>
+                <div class= "homescreenLogin">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="loginUsername">
+                            <label class="mdl-textfield__label" for="loginUsername">Usuario</label>
+                            
+                        </div>
+                    </form>
+                <!-- Numeric Textfield with Floating Label -->
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" pattern="[a-z]-?[0-9]*(\.[0-9]+)[A-Z]?" id="loginPassword">
+                            <label class="mdl-textfield__label" for="loginPassword">Senha</label>
+                        </div>
+                    </form>
+                    <button onclick="verificarPreenchimento()"> Login </button>
+                </div>
+            </div>
         </main>
 
     </div>
-    
-    
+
+    <script defer src="js/javascript.js"></script>
 </body>
 
 </html>
