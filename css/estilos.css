@@ -7,16 +7,14 @@ h2 {
 }
 h4{
     color: white;
-    -webkit-text-stroke-width: 1.2px;
-    -webkit-text-stroke-color: black;
+   
 }
 .introducao{
     display: flex;
     height: 70vh;
     margin: 50px;
     flex-direction: column;
-    -webkit-text-stroke-width: 1.3px;
-    -webkit-text-stroke-color: black;
+    
 }
 .divisaoTela{
     border-style: solid;
@@ -27,4 +25,14 @@ h4{
 }
 .homescreenLogin{
     
+    
+    
 }
+.mdl-textfield__input{
+    background-color: white;
+    
+}
+.mdl-textfield mdl-js-textfield mdl-textfield--floating-label{
+    border: none;
+}
+
