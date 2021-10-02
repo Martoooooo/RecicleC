@@ -7,12 +7,14 @@ h2 {
 }
 h4{
     color: white;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: black;
 }
 .introducao{
-
+    display: flex;
     height: 70vh;
     margin: 50px;
-
+    flex-direction: column;
 }
 .divisaoTela{
     border-style: solid;
@@ -21,14 +23,17 @@ h4{
     display:flex;
     justify-content: space-evenly;
 }
+.tituloFormulario{
+    color: black;
+}
 .frameCadastro{
+    
     height: 100vh;
     width: 25vw;
     margin-left: 37%; 
     background-color: white;
-    display:flex; 
+    display: flex; 
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
 }

@@ -32,7 +32,9 @@
     </style>
 
     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+
         <header class="mdl-layout__header mdl-layout__header--transparent">
+            
             <div class="mdl-layout__header-row">
                 <!-- Title -->
                 <span class="mdl-layout-title">Recicle-C</span>
@@ -40,14 +42,19 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="index.html">Página Inicial</a>
+                    <a class="mdl-navigation__link" href="../index.html">Página Inicial</a>
                     <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="paginas/mapa.html">Mapa</a>
+                    <a class="mdl-navigation__link" href="mapa.html">Mapa</a>
                     <a class="mdl-navigation__link" href="">Dúvidas</a>
+            
                 </nav>
+            
             </div>
+        
         </header>
+        
         <div class="mdl-layout__drawer">
+        
             <span class="mdl-layout-title">Recicle-C</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="">Link</a>
@@ -55,30 +62,87 @@
                 <a class="mdl-navigation__link" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>
             </nav>
+        
         </div>
+        
         <main class="mdl-layout__content">
-            <div class= "frameCadastro">
-                <h4>Formulário de cadastro</h4>
-                <br>
-                <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1">
-                <br>    
-                <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome" aria-describedby="basic-addon1">
-                <br>
-            <input type="text" class="form-control" placeholder="e-mail" aria-label="e-mail" aria-describedby="basic-addon1">
-                <br>
-                <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon1">
-                <br>
-                <input type="password" class="form-control" placeholder="Senha" aria-label="Senha" aria-describedby="basic-addon1">
-                <br>
-                <input type="password" class="form-control" placeholder="Confirmar senha" aria-label="ConfirmarSenha" aria-describedby="basic-addon1">
-                <br> 
-
+            
+            <div class="card" style="width: 18rem; float: left; margin-left: 150px; margin-top: 70px;">
+                <img src="../imgs/CWB_JB1.jpg" class="card-img-top">
+                <div class="card-body">
+            
+                    <p class="card-text"> 
+            Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+                </div>
+            
             </div>
+
+            <div class="card" style="width: 18rem; float: right; margin-right: 100px; margin-top: 70px;">
+            
+                <img src="../imgs/CWB_JB1.jpg" class="card-img-top">
+            
+                <div class="card-body">
+            
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+                </div>
+            
+            </div>
+            
+            <div class="card" style="width: 18rem; float:right; margin-right: -252px; margin-top: 370px;">
+            
+                <img src="../imgs/CWB_JB1.jpg" class="card-img-top">
+            
+                <div class="card-body">
+            
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+                </div>
+            
+            </div>
+            
+            
+            <div class="card" style="width: 18rem; float: left; margin-left: -252px; margin-top: 370px;">
+                <img src="../imgs/CWB_JB1.jpg" class="card-img-top">
+                <div class="card-body">
+            
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+                </div>
+            
+            </div>
+
+            <div class= "frameCadastro">
+                <br>
+                <h4 class= "tituloFormulario">Formulário de cadastro</h4>
+                <br>
+                Nome
+                <input type="text" class="form-control" id= "cadastroNome" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1">
+                <br>
+                Sobrenome    
+                <input type="text" class="form-control" id= "cadastroSobrenome" placeholder="Sobrenome" aria-label="Sobrenome" aria-describedby="basic-addon1">
+                <br>
+                E-mail
+                <input type="text" class="form-control" id= "cadastroEmail" placeholder="e-mail" aria-label="e-mail" aria-describedby="basic-addon1">
+                <br>
+                Telefone
+                <input type="text" class="form-control" id= "cadastroTelefone" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon1">
+                <br>
+                Senha
+                <input type="password" class="form-control" id= "cadastroSenha" placeholder="Senha" aria-label="Senha" aria-describedby="basic-addon1">
+                <br>
+                Confirmar Senha
+                <input type="password" class="form-control" id= "cadastroConfSenha" placeholder="Confirmar senha" aria-label="ConfirmarSenha" aria-describedby="basic-addon1">
+                <br> 
+                <button onclick="verificarPreenchimento()" type="button" class="btn btn-success">Cadastrar</button>
+            </div>
+                 
         </main>
 
     </div>
 
-    <script defer src="js/javascript.js"></script>
+    <script defer src="../js/script_cadastro.js"></script>
 </body>
 
 </html>
