@@ -5,7 +5,6 @@ h2 {
     font-size: 2.5rem;
     color: white;
 }
-
 img{
     height: 131px;
     width: 250px;
@@ -14,8 +13,7 @@ img{
     color: black;
 }
 .frameCadastro{
-    
-    height: 100vh;
+    height: 80vh;
     width: 25vw;
     margin-left: 37%; 
     background-color: white;
@@ -23,6 +21,7 @@ img{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    border: 1022px;
 }
 .form-control{
     width: 70%;
