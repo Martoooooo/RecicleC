@@ -13,16 +13,19 @@ img{
     color: black;
 }
 .frameCadastro{
-    height: 80vh;
-    width: 25vw;
-    margin-left: 37%; 
+    height: 90%;
+    width: 30%;
+    margin-left: 50%;
     background-color: white;
-    display: flex; 
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    border: 1022px;
+ 
 }
 .form-control{
     width: 70%;
+}
+.img-fluid{
+
 }
