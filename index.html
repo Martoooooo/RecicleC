@@ -8,10 +8,10 @@
     <title>Recicle-C</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>    
     <script defer src="js/javascript.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
 
 </head>
 
@@ -67,28 +67,27 @@
             </div>
             
             <div class= "divisaoTela">
-                <div>
-                    <h4> Ja possui uma conta? </h4>
+                <div class="position-absolute top-100 start-50 translate-middle">
+                    <h4 class="Titulo"> Ja possui uma conta? </h4>
+                    <div class= "homescreenLogin">
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">                          
+                            </div> <br>
+                                
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">                            
+                            </div>                        
+                        </form>
+                    </div> 
+                    <div class="d-grid gap-2">
+                        <button onclick="verificarPreenchimento()" type="button" class="btn btn-primary btn-lg">Login</button>
+                    </div>
+                           
                 </div>
-                <div class= "homescreenLogin">
-                    <form action="#">
-                        <table>
-                            <tr>
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">                          
-                                </div>
-                            </tr>
-                            <td>
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">                            
-                                </div>
-                            </td>                           
-                            
-                            
-                        </table>
-                    </form>               
+                       
                     
-                    <button onclick="verificarPreenchimento()" type="button" class="btn btn-primary">Login</button>
+                    
                     
                 </div>
             </div>
