@@ -6,26 +6,23 @@ h2 {
     color: white;
 }
 img{
-    height: 131px;
-    width: 250px;
+    width: 45%;
+    height: 45%;
 }
 .tituloFormulario{
     color: black;
 }
 .frameCadastro{
-    height: 90%;
+    height: 95%;
     width: 30%;
-    margin-left: 50%;
+    margin-left: 35%;
     background-color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
- 
+    border-radius: 25px;
 }
 .form-control{
     width: 70%;
-}
-.img-fluid{
-
 }
