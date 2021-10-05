@@ -1,0 +1,29 @@
+h1{
+    color: white
+}
+h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+img{
+    height: 131px;
+    width: 250px;
+}
+.tituloFormulario{
+    color: black;
+}
+.frameCadastro{
+    
+    height: 100vh;
+    width: 25vw;
+    margin-left: 37%; 
+    background-color: white;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.form-control{
+    width: 70%;
+}
