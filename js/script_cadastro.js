@@ -8,8 +8,10 @@ function verificarPreenchimento(){
 
     if (nome == "" || sobrenome == "" || email == "" || telefone == "" || senha == "" || confSenha == ""){
         console.log("há campos que não foram preenchidos, por favor, preencha-os novamente");
-        document.getElementById("formularioCadastro").innerHTML += "<h2>há campos que não foram preenchidos, por favor, preencha-os novamente</h2>";
-        
+        if (document.getElementById("error").innerHTML == "<h6>Há campos que não foram preenchidos. por favor, preencha-os novamente</h6>"){
+            document.getElementById("error").innerHTML == "";
+        }else { document.getElementById("error").innerHTML += "<h6>Há campos que não foram preenchidos. por favor, preencha-os novamente</h6>";
+        }
     } else{
         console.log("Cadastro realizado com sucesso");
     }

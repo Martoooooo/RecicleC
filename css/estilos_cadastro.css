@@ -9,11 +9,11 @@ img{
     width: 45%;
     height: 45%;
 }
+
 .tituloFormulario{
     color: black;
 }
 .frameCadastro{
-    height: 95%;
     width: 30%;
     margin-left: 35%;
     background-color: white;
@@ -23,6 +23,14 @@ img{
     flex-direction: column;
     border-radius: 25px;
 }
+.frameCadastro img{
+    border-radius: 71px;
+}
 .form-control{
     width: 70%;
+}
+.error{
+    display:flex;
+    justify-content:center;
+    color:black;
 }
