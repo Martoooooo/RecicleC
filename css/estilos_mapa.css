@@ -7,14 +7,11 @@ h2 {
 }
 h4{
     color: white;
-
 }
 .mapa{
-    
     display: flex;
     flex-direction: column;
     width: 80%;
-    
 }
 .mapa1{
     background-color: white;
@@ -33,5 +30,4 @@ h4{
     margin-right: 1%;
     margin-top: 6%;
     width: fit-content;
-    
 }
