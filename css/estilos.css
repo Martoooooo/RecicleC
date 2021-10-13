@@ -24,20 +24,14 @@ h4{
     justify-content: space-evenly;
 }
 .homescreenLogin{
-    
     size: 18rem;
-    
-    
-    
 }
 .mdl-textfield__input{
-    background-color: white;
-    
+    background-color: white;    
 }
-.mdl-textfield {
+.form-control{
     border: none;
-    margin-top: 0%;
-    
+    margin-top: 5%;
 }
 .Titulo{
     display: flex;
