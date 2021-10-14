@@ -111,25 +111,21 @@
             </div>
             
             <div class= "divisaoTela">
-                <div>
-                    <h4> Ja possui uma conta? </h4>
-                </div>
-                <div class= "homescreenLogin">
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="loginUsername">
-                            <label class="mdl-textfield__label" for="loginUsername">Usuario</label>
+                <div class="position-absolute top-100 start-50 translate-middle">
+                    <h4 class="Titulo"> Ja possui uma conta? </h4>
+                    <div class= "homescreenLogin">
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">                          
                             
-                        </div>
-                    </form>
-                <!-- Numeric Textfield with Floating Label -->
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="password" pattern="[a-z]-?[0-9]*(\.[0-9]+)[A-Z]?" id="loginPassword">
-                            <label class="mdl-textfield__label" for="loginPassword">Senha</label>
-                        </div>
-                    </form>
-                    <button onclick="verificarPreenchimento()"> Login </button>
+                                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">                            
+                            </div>                        
+                        </form>
+                    </div> 
+                    <div class="d-grid gap-2">
+                        <button onclick="verificarPreenchimento()" type="button" class="btn btn-primary btn-lg">Login</button>
+                    </div>
+                           
                 </div>
             </div>
         </main>
