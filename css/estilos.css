@@ -39,5 +39,9 @@ h4{
 }
 .carousel{
     margin: 0 auto;
-    width: 40%;   
+    width: 50%;   
+}
+.carousel img{
+
+    height: 350px;
 }
