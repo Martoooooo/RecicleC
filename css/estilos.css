@@ -49,5 +49,8 @@ h4{
     width: 40%;
 }
 .carousel img{
-    height: 50%;
+    height: 350px;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.700);
 }
