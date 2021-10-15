@@ -1,0 +1,12 @@
+.texto-info-projeto{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.texto-info-projeto h2{
+    margin: 5%;
+}
+.texto-info-projeto p{
+    margin: 5%;
+}
