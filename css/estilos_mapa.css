@@ -42,3 +42,7 @@ h4{
 .tipo{
     text-align: center; 
 }
+.dropdown-toggle{
+    background-color: rgb(61, 110, 184);
+    border: rgba(255, 255, 255, 0);
+}
