@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicle-C</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos_mapa.css">
+    
+
+</head>
+<body>
+
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+        .demo-layout-transparent {
+          background: url('../imgs/CWB_JB1.jpg') center / cover;
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+          /* This background is dark, so we set text to white. Use 87% black instead if
+             your background is light. */
+          color: black;
+        }
+    </style>
+    
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Recicle-C</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="../index.html">Página Inicial</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="../paginas/mapa.html">Mapa</a>
+                    <a class="mdl-navigation__link" href="">Dúvidas</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            
+            <span class="mdl-layout-title">Recicle-C</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+            
+        </div>
+
+        <main class="mdl-layout__content">
+
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="mapa_RC.html">Resíduos Construção civil</a></li>
+                  <li><a class="dropdown-item" href="mapa_LE.html"> Lixo Eletrônico </a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div> <br>
+            <div class= "mapa" id= "areaMapa">
+                <h2 class= "tipo"> Resíduos Recicláveis <br>  materiais recicláveis, óleo de cozinha e gordura pós-consumo </h2>
+                <table class= "tabela">
+                    
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src=
+                                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.43321875699!2d-49.308364785335!3d-25.423776138872277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3df88cb5fa7%3A0x64ed421a45cf1e53!2sParque%20Barigui!5e0!3m2!1spt-BR!2sbr!4v1633713405115!5m2!1spt-BR!2sbr" 
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Parque Barigüi– estacionamento próximo ao heliponto, entrada pela BR-277.</div>
+                            
+                            </div>
+                        </td>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.410321334905!2d-49.234998785336074!3d-25.391072237573585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce671983baf45%3A0xa27e90e20546de98!2sParque%20General%20Iber%C3%AA%20de%20Matos%20(Parque%20Bacacheri)!5e0!3m2!1spt-BR!2sbr!4v1633747430879!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Parque Bacacheri – acesso pela Rua Dr. Eurico César de Almeida.</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.689418964989!2d-49.26911648533622!3d-25.38172353720262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6c211eec2b5%3A0xe017a165c1da729e!2zUGFycXVlIFPDo28gTG91cmVuw6dv!5e0!3m2!1spt-BR!2sbr!4v1633747523138!5m2!1spt-BR!2sbr" 
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Parque São Lourenço – estacionamento, acesso pela Rua José Brusamolin.</div>
+                            
+                            </div>
+                        </td>    
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.832650998758!2d-49.244710385334464!3d-25.44385783967059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce5639cb22aed%3A0x9ad88111e8e1e4a8!2sJardinete%20Stella%20Surugi%20Leprevost!5e0!3m2!1spt-BR!2sbr!4v1633748040844!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Jardim Botânico de Curitiba – Jardinete Stella S. Leprevost – Rua Dr. Jorge Meyer Filho (em frente ao velódromo).</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.7882633851204!2d-49.33120028533349!3d-25.478744741058684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce2fb46699691%3A0x57ab5e72bf4b5d6f!2sParque%20Cambu%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1633748119876!5m2!1spt-BR!2sbr" 
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Parque Cambuí – ao lado do estacionamento do parque, em frente à UPA Fazendinha, Rua Carlos Klemtz, ao lado do n° 1825.</div>
+                            
+                            </div>
+                        </td>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.4767794387653!2d-49.307740185336044!3d-25.388846437485267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce11863885b9b%3A0x106542d72278f3e!2sParque%20Tingui!5e0!3m2!1spt-BR!2sbr!4v1633748172796!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Parque Tingui – na ponte de acesso, Rua Fredolin Wolf.</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>     
+        </main>
+
+    </div>
+    <script src="../js/javascript_mapa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

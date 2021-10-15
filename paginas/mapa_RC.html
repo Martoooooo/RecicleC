@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicle-C</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos_mapa.css">
+    
+
+</head>
+<body>
+
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+        .demo-layout-transparent {
+          background: url('../imgs/CWB_JB1.jpg') center / cover;
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+          /* This background is dark, so we set text to white. Use 87% black instead if
+             your background is light. */
+          color: black;
+        }
+    </style>
+    
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Recicle-C</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="../index.html">Página Inicial</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="../paginas/mapa.html">Mapa</a>
+                    <a class="mdl-navigation__link" href="">Dúvidas</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            
+            <span class="mdl-layout-title">Recicle-C</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+            
+        </div>
+
+        <main class="mdl-layout__content">
+
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="mapa_LE.html"> Lixo Eletrônico</a></li>
+                  <li><a class="dropdown-item" href="mapa_RR.html"> Resíduos de Construção Civil </a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div> <br>
+
+            
+            <div class= "mapa" id= "areaMapa">
+                <h2 class= "tipo">Resíduos de construção civil <br> madeiras, restos de podas de árvores e de limpeza de jardins, mobiliários inservíveis, etc. </h2>
+                <table class= "tabela">
+                    
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.2653401545294!2d-49.232570284983865!3d-25.529536983742627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb6e97d724e5%3A0x9d8a226e7e9ddd2b!2sECOPONTO%20VILA%20NOVA!5e0!3m2!1spt-BR!2sbr!4v1634339372355!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;"
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto">  Rua Tenente Coronel Villigran Cabrita, 2495,  esquina com a Rua Nair Ferraz Cazellato – Alto Boqueirão.</div>
+                            
+                            </div>
+                        </td>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.1847245118047!2d-49.25333113498352!3d-25.532223033741456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb8c86751eed%3A0x20a095f708cc04d4!2sEcoponto%20%C3%89rico%20Ver%C3%ADssimo!5e0!3m2!1spt-BR!2sbr!4v1634337806170!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Capitão Amin Mosse, 557, anexo à Praça Cláudio Manoel Loyola e Silva - Alto Boqueirão.</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.623902276913!2d-49.2542832!3d-25.5509019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfbc55ed17d39%3A0xdbb77f7b7978e6c4!2sRua%20Gua%C3%A7u%C3%AD%2C%205085%20-%20S%C3%ADtio%20Cercado%2C%20Curitiba%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1634339629512!5m2!1spt-BR!2sbr" 
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Guaçuí, 5085, esquina com a rua Maria Augusta - Sítio Cercado. </div>
+                            
+                            </div>
+                        </td>    
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.2349214191486!2d-49.343126185332146!3d-25.53055054312343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfd3e692750c1%3A0x75c9b802474ae586!2sRua%20Lydio%20Paulo%20Bettega%2C%20200%20-%20Cidade%20Industrial%20De%20Curitiba%2C%20Curitiba%20-%20PR%2C%2081460-205!5e0!3m2!1spt-BR!2sbr!4v1634338446289!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Lydio Paulo Bettega, 200, esquina com a Rua Marcos Campos - Cidade Industrial de Curitiba.</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.7874938812074!2d-49.3339492853327!3d-25.512132842388937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfd2ca1c8671b%3A0x7fb13d8d47b5302!2sR.%20Orestes%20Th%C3%A1%2C%201765%20-%20Cidade%20Industrial%20De%20Curitiba%2C%20Curitiba%20-%20PR%2C%2081020-490!5e0!3m2!1spt-BR!2sbr!4v1634338576586!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen=""
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Orestes Thá, 1765, esquina com a Rua Cid Campelo - Cidade Industrial de Curitiba.</div>
+                            
+                            </div>
+                        </td>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.4135987649597!2d-49.34763348533319!3d-25.49124924155666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce30d5c442039%3A0x250510012035bad6!2sAv.%20Juscelino%20Kubitschek%20de%20Oliveira%2C%206800%20-%20Cidade%20Industrial%20De%20Curitiba%2C%20Curitiba%20-%20PR%2C%2081250-460!5e0!3m2!1spt-BR!2sbr!4v1634338773609!5m2!1spt-BR!2sbr" 
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Juscelino Kubstcheski de Oliveira, 6800, Esquina com Estrada Velha do Barigui - Cidade Industrial de Curitiba.</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.2588160836985!2d-49.197526585333975!3d-25.463031840433224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dceffd75d56943%3A0xcb82651c8a90eb27!2sR.%20Neusa%20Vieira%20Bet%2C%20255%20-%20Cajuru%2C%20Curitiba%20-%20PR%2C%2082990-090!5e0!3m2!1spt-BR!2sbr!4v1634338956304!5m2!1spt-BR!2sbr" 
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Neusa Vieira Bet, 255, esquina com Rua Augusto Forbec - Cajuru.</div>
+                            
+                            </div>
+                        </td>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.7605843457086!2d-49.32997488498289!3d-25.579630883719748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfdd3b734fb8f%3A0x7acf76b4ed0e711b!2sR.%20Teresa%20de%20Freitas%20Tav%C3%A1res%2C%20331%20-%20Campo%20de%20Santana%2C%20Curitiba%20-%20PR%2C%2081490-010!5e0!3m2!1spt-BR!2sbr!4v1634339047095!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Teresa de Freitas Tavares, 331 - Campo Santana.</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.5046697024354!2d-49.26896668533144!3d-25.554871444094132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfbe8f17fa993%3A0x78936a7e95277673!2sRua%20Radialista%20Souza%20Moreno%2C%2052%20-%20S%C3%ADtio%20Cercado%2C%20Curitiba%20-%20PR%2C%2081935-320!5e0!3m2!1spt-BR!2sbr!4v1634339177572!5m2!1spt-BR!2sbr" 
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Radialista Souza Moreno, 52, esquina com Rua José Otávio Meira dos Anjos - Sítio Cercado.</div>
+                            
+                            </div>
+                        </td>
+                        <td>
+                            <div class= "mapa1"> 
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.4149940656007!2d-49.20544988498449!3d-25.49120268376035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcf07601f3fdd3%3A0xc272c0a0d39c58e3!2sPra%C3%A7a%20Homero%20Morinobu%20Oguido!5e0!3m2!1spt-BR!2sbr!4v1634339285255!5m2!1spt-BR!2sbr"
+                                    height="300%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                <div class= "texto"> Rua Juscelino Kubstcheski de Oliveira, 6800, Esquina com Estrada Velha do Barigui - Cidade Industrial de Curitiba.</div>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>     
+        </main>
+
+    </div>
+    <script src="../js/javascript_mapa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
