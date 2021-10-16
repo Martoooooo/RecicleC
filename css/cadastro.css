@@ -30,7 +30,6 @@ img{
     width: 70%;
 }
 .error{
-    display:flex;
-    justify-content:center;
-    color:black;
+    text-align: center; 
+    color:rgb(121, 1, 1);
 }
