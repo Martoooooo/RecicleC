@@ -47,20 +47,11 @@ h4{
     align-items: center;
     flex-direction: column;
 }
-.carousel{
-    margin: 0 auto;
-    width: 40%;
+.logo{
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
 }
-.carousel img{
-    height: 350px;
-}
-.carousel-caption{
-    background-color: rgba(0, 0, 0, 0.700);
-}
-.carousel-estilo{
-    display:flex;
-    flex-direction: row;
-}
-.carousel2{
-    opacity: 0.6;
+.branco{
+    width: 10%;
 }
