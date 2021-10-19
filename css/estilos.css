@@ -57,7 +57,7 @@ h4{
 .logo{
     display: flex;
     justify-content: space-around;
-    height: 50vh;
+    height: 20vh;
 }
 .branco{
     width: 10%;
