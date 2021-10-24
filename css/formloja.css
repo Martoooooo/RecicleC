@@ -1,0 +1,30 @@
+.fundo{
+    background-color: white;
+    margin: 2% auto;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+}
+.infoProduto{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.inputInfoProduto{
+    width: 50%;
+    
+}
+.info1{
+    margin-right: 2%;
+
+}
+.info2{
+
+}
+.form-control{
+
+}

@@ -1,1 +1,6 @@
-$variavel
+<?php
+
+    echo "oi";
+
+
+?>

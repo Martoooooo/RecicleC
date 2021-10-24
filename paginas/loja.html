@@ -30,7 +30,9 @@
         <header class="mdl-layout__header mdl-layout__header--transparent">
             <div class="mdl-layout__header-row">
                 
-                <span class="mdl-layout-title">Recicle-C</span>
+                <span class="mdl-layout-title">
+                    Recicle-C
+                </span>
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="../index.html">Página Inicial</a>
@@ -52,19 +54,211 @@
             </nav>
             
         </div>
-        <main >
-            <div>
-                <button onclick="location.href='formloja.html'" type="button" class="btn btn-primary">Cadastrar novo produto</button>
-            </div>
-            <div>
+        <main class="mdl-layout__content">
+            
+            <div class= "fundo">
+                <div id="light" class="white_content">
+                
+                    <a class="botaoPopup btn btn-primary" href="javascript:void(0)" onclick="fecharcompra()">Fechar janela</a>
+
+                    <div class= "nomeCompleto input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nome completo do titular" aria-label="nomeCompleto" aria-describedby="basic-addon1">
+                    </div>
+   
+                    <div class= "inputCartao">
+
+                        <div class="inputNum input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Numero do cartão" aria-label="numeroCartao" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="inputCVV input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Código de verificação" aria-label="codigoVerificacao" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="inputDataV input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Data de vencimento" aria-label="dataVencimento" aria-describedby="basic-addon1">
+                        </div>
+
+                    </div>
+
+                    <div class= "endereco">
+
+                        <div class= "endCobranca input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Endereço de cobrança" aria-label="enderecoCobranca" aria-describedby="basic-addon1">
+                        </div>
+                        
+                        <div class= "CEP input-group mb-3">
+                            <input type="text" class="form-control" placeholder="CEP" aria-label="CEP" aria-describedby="basic-addon1">
+                        </div>
+
+                    </div>
+                    <div class="senhaConfirm input-group mb-3">
+
+                        <input type="password" class=" senhaConfirm form-control" placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1">
+
+                    </div>
+
+                    <button onclick="" type="button" class="botaoConfirmarCompra btn btn-primary">Confirmar compra</button>
+
+
+
+                </div>
+                <div id="fade" class="black_overlay"></div>
+                
+                
+                <div class= "botoes">
+
+                    <button onclick="location.href='formloja.html'" type="button" class="botaoCadastroItem btn btn-primary">Cadastrar novo produto</button>
+
+                    <button onclick= "location.href='historicoCompras.html'" type=button class= "botaoHistoricoCompras btn btn-primary"> Histórico de produtos </button>
+
+                </div>
+                
+
+                <table>
+                    <tr>          
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Notebook </h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="anuncioUnico card">
+                                
+                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">apenas um anuncio de exemplo.</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
             </div>
             
         </main>
     
+        <!--  -->
 
-    
+    <script src= "../js/loja.js"></script>
 </body>
-
-</html>   
-    
+</html>
