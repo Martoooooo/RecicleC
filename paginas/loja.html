@@ -55,55 +55,62 @@
         <main class="mdl-layout__content">
             
             <div class= "fundo">
-                <div id="light" class="white_content">
-                
-                    <a class="botaoPopup btn btn-primary" href="javascript:void(0)" onclick="fecharcompra()">Fechar janela</a>
-
-                    <div class= "nomeCompleto input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nome completo do titular" aria-label="nomeCompleto" aria-describedby="basic-addon1">
-                    </div>
-   
-                    <div class= "inputCartao">
-
-                        <div class="inputNum input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Numero do cartão" aria-label="numeroCartao" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="inputCVV input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Código de verificação" aria-label="codigoVerificacao" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="inputDataV input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Data de vencimento" aria-label="dataVencimento" aria-describedby="basic-addon1">
-                        </div>
-
-                    </div>
-
-                    <div class= "endereco">
-
-                        <div class= "endCobranca input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Endereço de cobrança" aria-label="enderecoCobranca" aria-describedby="basic-addon1">
-                        </div>
-                        
-                        <div class= "CEP input-group mb-3">
-                            <input type="text" class="form-control" placeholder="CEP" aria-label="CEP" aria-describedby="basic-addon1">
-                        </div>
-
-                    </div>
+                <div id="form" class="white_content">
                     
-                    <div class="senhaConfirm input-group mb-3">
+                    <div class= "dadosVendedor">
 
-                        <input type="password" class=" senhaConfirm form-control" placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1">
 
                     </div>
+                    <form>
 
-                    <button onclick="" type="button" class="botaoConfirmarCompra btn btn-primary">Confirmar compra</button>
+                        <!--
+                        <div class= "nomeCompleto input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nome completo do titular" aria-label="nomeCompleto" aria-describedby="basic-addon1" required>
+                        </div>
+   
+                        <div class= "inputCartao">
 
+                            <div class="inputNum input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Numero do cartão" aria-label="numeroCartao" aria-describedby="basic-addon1" required>
+                            </div>
+    
+                            <div class="inputCVV input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Código de verificação" aria-label="codigoVerificacao" aria-describedby="basic-addon1" required>
+                            </div>
+    
+                            <div class="inputDataV input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Data de vencimento" aria-label="dataVencimento" aria-describedby="basic-addon1" required>
+                            </div>
+
+                        </div>
+
+                        <div class= "endereco">
+
+                            <div class= "endCobranca input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Endereço de cobrança" aria-label="enderecoCobranca" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class= "CEP input-group mb-3">
+                                <input type="text" class="form-control" placeholder="CEP" aria-label="CEP" aria-describedby="basic-addon1">
+                            </div>
+
+                        </div>
+
+                        <div class="senhaConfirm input-group mb-3">
+
+                            <input type="password" class=" senhaConfirm form-control" placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1" required>
+
+                        </div>
+
+                        <button onclick="" type="submit" class="botaoConfirmarCompra btn btn-primary">Confirmar compra</button>
+                        -->
+
+                    </form>
 
 
                 </div>
-                <div id="fade" class="black_overlay"></div>
-                
+
+                <div id="fundo" class="black_overlay"></div> 
                 
                 <div class= "botoes">
 
@@ -124,12 +131,13 @@
                                     
                                     <h5 class="card-title">Notebook </h5>
                                     <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario()"> Comprar </a>
 
                                 </div>
 
                             </div>
                         </td>
+                        
                         <td>
                             <div class="anuncioUnico card">
                                 

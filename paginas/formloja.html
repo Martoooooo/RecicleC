@@ -59,37 +59,47 @@
               <div class="input-group mb-3">
                 <input type="file" class="form-control" id="inputGroupFile02">
                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
-
               </div>
 
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email do vendedor</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <div class= "infoProduto mb-3">
+                <div class="mb-3 emailVendedor" id="emailVendedor">
+                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+              
+                <div class="mb-3 telefoneVendedor" id="telefoneVendedor">
+                  <label for="exampleFormControlInput1" class="form-label">Telefone para contato</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(99) 9 9999-9999">
+                </div>
               </div>
 
               <div class="infoProduto mb-3">
-                
-                <div class= "inputInfoProduto info1">
+
+                <div class= "inputInfoProduto nomeProduto mb-3">
                   <label for="exampleFormControlInput2" class="form-label">Nome do Produto</label>
-                  <input type="input" class="form-control" id="exampleFormControlInput2">
+                  <input type="input" class="form-control" id="exampleFormControlInput2" placeholder="Produto">
                 </div>
 
-                <div class= "inputInfoProduto info2">
+                <div class= "inputInfoProduto precoProduto mb-3">
                   <label for="exampleFormControlInput2" class="form-label">Preço</label>
-                  <input type="input" class="form-control" id="exampleFormControlInput2">
+                  <input type="input" class="form-control" id="exampleFormControlInput2" placeholder= "R$0,00">
                 </div>
 
               </div>
 
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Descrição do produto</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Detalhes sobre o produto"></textarea>
               </div>
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Telefone para contato</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <div class= "senhaConfirmacao mb-3" id="senhaConfirmacao">
+                <label for="exampleFormControlInput2" class="form-label">Senha para confirmação *</label>
+                <input type="password" class="form-control" id="exampleFormControlInput2" placeholder= "Senha para confirmar / remover o anuncio">
+                
               </div>
+
+              <h6 class="help">*Essa senha servirá para você remover o anúncio caso necessário</h6>
+
 
               <div>
                 <button onclick="location.href='loja.html'" type="submit" class="btn btn-primary">Cadastrar Produto</button>

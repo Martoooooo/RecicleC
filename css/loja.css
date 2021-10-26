@@ -2,13 +2,14 @@ table{
     margin-top: 1%;
     margin-bottom: 3%;
     width: 100%;
-
+    
 }
 tr{
 
 }
 td{
-    margin: 0 auto;
+    margin-left: 4%;
+    float:left;
     
 }
 
@@ -26,7 +27,7 @@ td{
     border-style: solid;
     border-color: Black;
     border-radius: 10px;
-    width: 80%;
+    width: 75%;
 
 }
 .anuncioUnico img{
@@ -47,21 +48,22 @@ td{
 
 }
 .botoes{
-    margin: 2% auto;
-    display: flex;
-    flex-direction: row;
+    width: 35%;
+    margin: 0 auto;
+    float:left;
     
 }
 .botaoCadastroItem{
-    height: 70px;
-    width: 250px;
-    margin: 0 4%;
+    height: 30px;
+    width: 230px;
+    margin: 2% 4% 2% 5%;
     
 }
 .botaoHistoricoCompras{
-    height: 70px;
-    width: 250px;
-    margin: 0 4%;
+    height: 30px;
+    width: 230px;
+    margin: 2% 4% 2% 5%;
+
     
 }
 .inputCartao{

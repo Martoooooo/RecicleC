@@ -1,3 +1,6 @@
+.help{
+    color: brown;
+}
 .fundo{
     background-color: white;
     margin: 2% auto;
@@ -10,21 +13,30 @@
 }
 .infoProduto{
     display:flex;
-    flex-direction: row;
+    float:left;
     width: 100%;
 
 }
 .inputInfoProduto{
-    width: 50%;
+    width: 30%;
     
 }
-.info1{
-    margin-right: 2%;
+
+.emailVendedor{
+    width: 30%;
+    margin-right: 5%;
+   
+}
+.nomeProduto{
+    width: 50%;
+    margin-right: 5%;
 
 }
-.info2{
-
+.precoProduto{
+    width: 30%;
 }
-.form-control{
-
+.senhaConfirmacao{
+    width: 20%;
+    margin: 0 auto;
 }
+

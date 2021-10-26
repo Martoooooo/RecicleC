@@ -1,10 +1,9 @@
-function abrircompra(){
-    document.getElementById('light').style.display='block';
-    document.getElementById('fade').style.display='block';
+function abrirFormulario(){
+    document.getElementById("fundo").style.display= "block";
+    document.getElementById("form").style.display = "block";
 }
-function fecharcompra(){
-    document.getElementById('light').style.display='none';
-    document.getElementById('fade').style.display='none';
+function fecharFormulario(){
+    document.getElementById("fundo").style.display= "none";
+    document.getElementById("form").style.display = "none";
+
 }
-
-

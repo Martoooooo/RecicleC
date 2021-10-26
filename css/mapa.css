@@ -23,7 +23,7 @@ h4{
     margin-top: 4%;
     margin-left: 5%;
     margin-right: 5%;
-    
+
     height: 17%;
     display:flex;
     border-radius: 25px;
@@ -64,4 +64,13 @@ h4{
 }
 .btn{
     background-color: green;
+}
+tr{
+    width: 30%;
+    margin: 0 auto;
+}
+td{
+    float:left;
+    width: 430px;
+
 }
