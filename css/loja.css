@@ -17,7 +17,7 @@ td{
     background-color: white;
     margin: 2% auto;
     border-radius: 10px;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
 
@@ -27,12 +27,12 @@ td{
     border-style: solid;
     border-color: Black;
     border-radius: 10px;
-    width: 75%;
+    width: 275px;
 
 }
 .anuncioUnico img{
     border-radius: 10px;
-    width: 100%;
+    width: 275px;
     height: 315px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; 
@@ -41,10 +41,6 @@ td{
 .botaoPopup{
     margin-bottom: 3%;
     margin-left: 84%;
-
-}
-.white_content{
-    border-radius: 10px;
 
 }
 .botoes{
@@ -63,53 +59,57 @@ td{
     height: 30px;
     width: 230px;
     margin: 2% 4% 2% 5%;
-
     
 }
-.inputCartao{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-}
-.inputNum{
-    width: 45%;
-    
-}
-.inputCVV{
-    width: 23%;
-
-}
-.inputDataV{
-    width: 23%;
-
-}
-.endereco{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-.CEP{
-    width: 30%;
-    margin-left: 3%;
-    
-}
 .senhaConfirm{
     margin: 0 auto;
     width: 20%;
+
 }
+
 .dadosVendedor{
-    
-}
-.botaoFecharPopup{
-    margin-right: 0%;
-    margin-left: auto;
+    float: left;
+    width: 100%;
 
 }
-.botaoConfirmarCompra{
-    
+.botaoFecharPopup{   
+    margin-right: 60%;
+    width: 77px;
+    height: 33px;
 
+}
+.info{
+    width: 100%;
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 18%;
+    
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.botoesContato{
+    width: 100%;
+    float: left;
+    
+}
+.botoesContato button{
+    margin: 0 5%;
+    
+}
+.botaoConexao{
+    height: 50px;
+    float: left;
+
+}
+.facebook img{
+    float: left;
+    margin: 15px;
+    height: 50px;
+
+}
+.senhaShhh{
+    margin-left: 30%;
 }
 
 
@@ -118,7 +118,7 @@ td{
     position: absolute;
     top: 0%;
     left: 0%;
-    width: 100%;
+    width: 550%;
     height: 100%;
     background-color: black;
     z-index: 1001;
@@ -132,9 +132,10 @@ td{
     position: absolute;
     top: 25%;
     left: 25%;
-    width: 50%;
+    width: 60%;
     height: 50%;
     padding: 16px;
+    border-radius: 10px;
     background-color: white;
     z-index: 1002;
     overflow: auto;

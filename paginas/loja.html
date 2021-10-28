@@ -45,72 +45,18 @@
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Recicle-C</span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Perfil</a>
-                <a class="mdl-navigation__link" href="cadastro.html">Cadastro</a>
+                <a class="mdl-navigation__link" href="../index.html">Página Inicial</a>
+                <a class="mdl-navigation__link" href="loja.html">Loja</a>
                 <a class="mdl-navigation__link" href=""></a>
-                <a class="mdl-navigation__link" href=""></a>
+                <a class="mdl-navigation__link" href="mapa_LE.html">Mapa</a>
+                <a class="mdl-navigation__link" href="doacoes.html">Doações</a>
             </nav>
         </div>
 
         <main class="mdl-layout__content">
             
             <div class= "fundo">
-                <div id="form" class="white_content">
-                    
-                    <div class= "dadosVendedor">
-
-                        <button onclick="fecharFormulario()" type="submit" class="botaoConfirmarCompra btn btn-primary">Confirmar compra</button>
-                        <button onclick="fecharFormulario()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
-
-                    </div>
-                    <form>
-
-                        <!--
-                        <div class= "nomeCompleto input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Nome completo do titular" aria-label="nomeCompleto" aria-describedby="basic-addon1" required>
-                        </div>
-   
-                        <div class= "inputCartao">
-
-                            <div class="inputNum input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Numero do cartão" aria-label="numeroCartao" aria-describedby="basic-addon1" required>
-                            </div>
-    
-                            <div class="inputCVV input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Código de verificação" aria-label="codigoVerificacao" aria-describedby="basic-addon1" required>
-                            </div>
-    
-                            <div class="inputDataV input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Data de vencimento" aria-label="dataVencimento" aria-describedby="basic-addon1" required>
-                            </div>
-
-                        </div>
-
-                        <div class= "endereco">
-
-                            <div class= "endCobranca input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Endereço de cobrança" aria-label="enderecoCobranca" aria-describedby="basic-addon1">
-                            </div>
-
-                            <div class= "CEP input-group mb-3">
-                                <input type="text" class="form-control" placeholder="CEP" aria-label="CEP" aria-describedby="basic-addon1">
-                            </div>
-
-                        </div>
-
-                        <div class="senhaConfirm input-group mb-3">
-
-                            <input type="password" class=" senhaConfirm form-control" placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1" required>
-
-                        </div>
-                    -->                        
-
-                    </form>
-
-
-                </div>
-
-                <div id="fundo" class="black_overlay"></div> 
+                
                 
                 <div class= "botoes">
 
@@ -126,18 +72,110 @@
                         <td>
                             <div class="anuncioUnico card">
                                 
+                                <img src="https://static.wixstatic.com/media/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.jpg/v1/fill/w_195,h_274,al_c,q_80,usm_0.66_1.00_0.01/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    
+                                    <h5 class="card-title"> CARTEIRA CLASSIC ZIPPER </h5>
+                                    <p class="card-text">Desing clássico, feita para carregar os documentos mais necessários no dia a dia, feita com espaço calculado para documento automobilístico e com plástico transparente para fácil identificação dos documentos sem a necessidade de tira-los do material.</p>
+                                        <p class="card-text">    
+                                        A 15 cm
+                                        <br>
+                                        L 11 cm
+                                        <br>
+                                        E 3
+                                        <br>
+                                        Cristal para documentos
+                                        <br>
+                                        3 bolsos</p>
+                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario1()"> Comprar </a>
+
+                                </div>
+
+                            </div>
+
+                            <!--Janela do vendedor-->
+
+                            <div id="dadosVendedor1" class="white_content">
+                    
+                                <div class= "dadosVendedor">
+                                    
+                                    <div>
+                                        <button onclick="fecharFormulario1()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                    </div>
+                                    <br>
+                                    <h3>Vendedor: Julia Zanetti da Cruz</h3>
+                                    <h4>Telefone: </h4>
+                                    <h4>(99) 9 9999-9999</h4>
+                                    <h4>E-mail:  </h4>
+                                    <h4>jznt@gmail.com</h4>
+
+                                    <div class= "botoesContato">
+            
+                                            <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="facebook botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
+                                            <!-- src= '' -->
+                                            <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+                                        
+                                            <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="senhaShhh" id= "senhaShhh">
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                </div>
+                                
+                            </div>
+            
+                            <div id="fundo" class="black_overlay"></div> 
+                        </td>
+                        
+                        <td>
+                            <div class="anuncioUnico card">
+                                
                                 <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     
-                                    <h5 class="card-title">Notebook </h5>
+                                    <h5 class="card-title">Anuncio exemplo</h5>
                                     <p class="card-text">apenas um anuncio de exemplo.</p>
                                     <a href="#" class="btn btn-primary" onclick="abrirFormulario()"> Comprar </a>
-
+                                
                                 </div>
 
                             </div>
+
+                            <!--Janela do vendedor-->
+                            <div id="dadosVendedor" class="white_content">
+                    
+                                <div class= "dadosVendedor">
+                                    
+                                    <div>
+                                        <button onclick="fecharFormulario()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                    </div>
+                                    <br>
+                                    <h3>Vendedor: Julia Zanetti da Cruz</h3>
+                                    <h4>Telefone: </h4>
+                                    <h4>(99) 9 9999-9999</h4>
+                                    <h4>E-mail:  </h4>
+                                    <h4>jznt@gmail.com</h4>
+                                    <div class= "botoesContato">
+            
+                                            <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="facebook botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
+                                            <!-- src= '' -->
+                                            <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+                                        
+                                            <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+
+                                    </div>
+
+                                </div>
+            
+                            </div>
+                            
                         </td>
-                        
                         <td>
                             <div class="anuncioUnico card">
                                 
@@ -146,118 +184,44 @@
                                     
                                     <h5 class="card-title">Anuncio exemplo</h5>
                                     <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
+                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario()"> Comprar </a>
                                 
                                 </div>
 
                             </div>
-                        </td>
-                        <td>
-                            <div class="anuncioUnico card">
-                                
-                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+
+                            <!--Janela do vendedor-->
+                            <div id="dadosVendedor" class="white_content">
+                    
+                                <div class= "dadosVendedor">
                                     
-                                    <h5 class="card-title">Anuncio exemplo</h5>
-                                    <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
-                                
-                                </div>
+                                    <div>
+                                        <button onclick="fecharFormulario()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                    </div>
+                                    <br>
+                                    <h3>Vendedor: Julia Zanetti da Cruz</h3>
+                                    <h4>Telefone: </h4>
+                                    <h4>(99) 9 9999-9999</h4>
+                                    <h4>E-mail:  </h4>
+                                    <h4>jznt@gmail.com</h4>
+                                    <div class= "botoesContato">
+            
+                                            <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="facebook botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
+                                            <!-- src= '' -->
+                                            <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+                                        
+                                            <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
 
+                                    </div>
+
+                                </div>
+            
                             </div>
+
                         </td>
                         
                     </tr>
-                    <tr>
-                        
-                        <td>
-                            <div class="anuncioUnico card">
-                                
-                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    
-                                    <h5 class="card-title">Anuncio exemplo</h5>
-                                    <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
-                                
-                                </div>
-
-                            </div>
-                        </td>
-                        <td>
-                            <div class="anuncioUnico card">
-                                
-                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    
-                                    <h5 class="card-title">Anuncio exemplo</h5>
-                                    <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
-                                
-                                </div>
-
-                            </div>
-                        </td>
-                        <td>
-                            <div class="anuncioUnico card">
-                                
-                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    
-                                    <h5 class="card-title">Anuncio exemplo</h5>
-                                    <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
-                                
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                       
-                        <td>
-                            <div class="anuncioUnico card">
-                                
-                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    
-                                    <h5 class="card-title">Anuncio exemplo</h5>
-                                    <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
-                                
-                                </div>
-
-                            </div>
-                        </td>
-                        <td>
-                            <div class="anuncioUnico card">
-                                
-                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    
-                                    <h5 class="card-title">Anuncio exemplo</h5>
-                                    <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
-                                
-                                </div>
-
-                            </div>
-                        </td>
-                        <td>
-                            <div class="anuncioUnico card">
-                                
-                                <img src="../imgs/loja/computador_anuncio.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    
-                                    <h5 class="card-title">Anuncio exemplo</h5>
-                                    <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrircompra()"> Comprar </a>
-                                
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
+                    
                 </table>
 
             </div>
