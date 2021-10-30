@@ -56,13 +56,11 @@
         <main class="mdl-layout__content">
             
             <div class= "fundo">
-                
+                <div id="fundoPopup" class="black_overlay"></div> 
                 
                 <div class= "botoes">
 
                     <button onclick="location.href='formloja.html'" type="button" class="botaoCadastroItem btn btn-primary">Cadastrar novo produto</button>
-
-                    <button onclick= "location.href='historicoCompras.html'" type=button class= "botaoHistoricoCompras btn btn-primary"> Histórico de produtos </button>
 
                 </div>
                 
@@ -98,39 +96,46 @@
                             <div id="dadosVendedor1" class="white_content">
                     
                                 <div class= "dadosVendedor">
-                                    
-                                    <div>
-                                        <button onclick="fecharFormulario1()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                    <div class="botoesManipPopup">
+                                        <div>
+                                            <button onclick="fecharFormulario1()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+
+                                        </div>
+                                        <div> 
+                                            <button onclick="abrirSenha()" type= "submit" class="botaoRemoverAnuncio btn btn-primary">Remover Anuncio</button>
+                                        </div>
                                     </div>
                                     <br>
-                                    <h3>Vendedor: Julia Zanetti da Cruz</h3>
+                                    <h3>Vendedor(a): Julia Zanetti da Cruz</h3>
                                     <h4>Telefone: </h4>
                                     <h4>(99) 9 9999-9999</h4>
                                     <h4>E-mail:  </h4>
                                     <h4>jznt@gmail.com</h4>
 
                                     <div class= "botoesContato">
-            
-                                            <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="facebook botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
-                                            <!-- src= '' -->
-                                            <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
-                                        
-                                            <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+
+                                        <button class= "botaoConexao site btn btn-primary" onclick= "location.href='https://www.delacrux.com.br/product-page/carteira-classic-2'"> Site </button>
+
+                                        <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
+                                        <!-- src= '' -->
+                                        <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+                                    
+                                        <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
 
                                     </div>
 
                                 </div>
 
-                                <div class="senhaShhh" id= "senhaShhh">
+                                <div class="senhaShhh" id= "inputSenhaConfirmacao">
 
-                                    <label for="psw"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    <label for="psw"><b>Senha de remoção</b></label>
+                                    <input type="password" placeholder="Senha para remover anuncio" name="psw">
 
                                 </div>
                                 
                             </div>
             
-                            <div id="fundo" class="black_overlay"></div> 
+                            
                         </td>
                         
                         <td>
@@ -141,33 +146,41 @@
                                     
                                     <h5 class="card-title">Anuncio exemplo</h5>
                                     <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario()"> Comprar </a>
+                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario2()"> Comprar </a>
                                 
                                 </div>
 
                             </div>
 
                             <!--Janela do vendedor-->
-                            <div id="dadosVendedor" class="white_content">
+                            <div id="dadosVendedor2" class="white_content">
                     
                                 <div class= "dadosVendedor">
-                                    
-                                    <div>
-                                        <button onclick="fecharFormulario()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                    <div class="botoesManipPopup">
+
+                                        <div>
+                                            <button onclick="fecharFormulario2()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                        </div>
+                                        <div> 
+                                            <button onclick="abrirSenha()" type= "submit" class="botaoRemoverAnuncio btn btn-primary">Remover Anuncio</button>
+                                        </div>
+
                                     </div>
+                                    
                                     <br>
-                                    <h3>Vendedor: Julia Zanetti da Cruz</h3>
+                                    <h3>Vendedor: Saimon Marcelo Cruz de Rezende</h3>
                                     <h4>Telefone: </h4>
                                     <h4>(99) 9 9999-9999</h4>
                                     <h4>E-mail:  </h4>
-                                    <h4>jznt@gmail.com</h4>
+                                    <h4>smcr@outlook.com</h4>
                                     <div class= "botoesContato">
-            
-                                            <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="facebook botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
-                                            <!-- src= '' -->
-                                            <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
                                         
-                                            <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+                                        <button class= "botaoConexao site btn btn-primary" onclick= "location.href='https://www.manaslu.com.br'"> Site </button>
+
+                                        <a onclick="location.href='https://www.facebook.com/saimon.derezende'" class="facebook botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
+                                        <!-- src= '' -->
+                                    
+                                        <a onclick="location.href='https://www.instagram.com/manasluequipamentos/'" type="submit" class="facebook botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
 
                                     </div>
 
@@ -184,22 +197,22 @@
                                     
                                     <h5 class="card-title">Anuncio exemplo</h5>
                                     <p class="card-text">apenas um anuncio de exemplo.</p>
-                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario()"> Comprar </a>
+                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario3()"> Comprar </a>
                                 
                                 </div>
 
                             </div>
 
                             <!--Janela do vendedor-->
-                            <div id="dadosVendedor" class="white_content">
+                            <div id="dadosVendedor3" class="white_content">
                     
                                 <div class= "dadosVendedor">
                                     
                                     <div>
-                                        <button onclick="fecharFormulario()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                        <button onclick="fecharFormulario3()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
                                     </div>
                                     <br>
-                                    <h3>Vendedor: Julia Zanetti da Cruz</h3>
+                                    <h3>Vendedor: Zanetti da Cruz</h3>
                                     <h4>Telefone: </h4>
                                     <h4>(99) 9 9999-9999</h4>
                                     <h4>E-mail:  </h4>
@@ -221,7 +234,11 @@
                         </td>
                         
                     </tr>
-                    
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
                 </table>
 
             </div>
