@@ -62,6 +62,8 @@
 
                     <button onclick="location.href='formloja.html'" type="button" class="botaoCadastroItem btn btn-primary">Cadastrar novo produto</button>
 
+                    <button onclick="criarAnuncio()">teste</button>
+
                 </div>
                 
 
@@ -106,24 +108,35 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <h3>Vendedor(a): Julia Zanetti da Cruz</h3>
-                                    <h4>Telefone: </h4>
-                                    <h4>(99) 9 9999-9999</h4>
-                                    <h4>E-mail:  </h4>
-                                    <h4>jznt@gmail.com</h4>
+                                    <label>
+                                        <h3>Vendedor(a): Julia Zanetti da Cruz</h3>
+                                        <h4>Telefone: </h4>
+                                        <h4>(99) 9 9999-9999</h4>
+                                        <h4>E-mail:  </h4>
+                                        <h4>jznt@gmail.com</h4>
+                                    </label>
 
                                     <div class= "botoesContato">
 
-                                        <button class= "botaoConexao site btn btn-primary" onclick= "location.href='https://www.delacrux.com.br/product-page/carteira-classic-2'"> Site </button>
-
-                                        <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
+                                        <label> Site <br>
+                                            <button class= "botaoConexao site btn btn-primary" onclick= "location.href='https://www.delacrux.com.br/product-page/carteira-classic-2'"> Site </button>
+                                        </label>
+                                        
+                                        <label> Facebook <br>
+                                            <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
+                                        </label>
+                                        
                                         <!-- src= '' -->
-                                        <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
-                                    
-                                        <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+
+                                        <label> Instagram <br>
+                                            <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+                                        </label>
+                                        
+                                        <label> Instagram (Empresa) <br>
+                                            <a onclick="location.href='https://www.instagram.com/delacrux_upcycling/'" type="submit" class="botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
+                                        </label>
 
                                     </div>
-
                                 </div>
 
                                 <div class="senhaShhh" id= "inputSenhaConfirmacao">
@@ -168,11 +181,13 @@
                                     </div>
                                     
                                     <br>
-                                    <h3>Vendedor: Saimon Marcelo Cruz de Rezende</h3>
-                                    <h4>Telefone: </h4>
-                                    <h4>(99) 9 9999-9999</h4>
-                                    <h4>E-mail:  </h4>
-                                    <h4>smcr@outlook.com</h4>
+                                    <label>
+                                        <h3>Vendedor: Saimon Marcelo Cruz de Rezende</h3>
+                                        <h4>Telefone: </h4>
+                                        <h4>(99) 9 9999-9998</h4>
+                                        <h4>E-mail:  </h4>
+                                        <h4>smcr@outlook.com</h4>
+                                    </label>
                                     <div class= "botoesContato">
                                         
                                         <button class= "botaoConexao site btn btn-primary" onclick= "location.href='https://www.manaslu.com.br'"> Site </button>
@@ -185,7 +200,12 @@
                                     </div>
 
                                 </div>
-            
+                                <div class="senhaShhh" id= "inputSenhaConfirmacao">
+
+                                    <label for="psw"><b>Senha de remoção</b></label>
+                                    <input type="password" placeholder="Senha para remover anuncio" name="psw">
+
+                                </div>
                             </div>
                             
                         </td>
@@ -238,6 +258,14 @@
                         <td>
 
                         </td>
+
+                        <td>
+
+                        </td>
+                        
+                        <td>
+
+                        </td>
                     </tr>
                 </table>
 
@@ -248,5 +276,6 @@
         <!--  -->
 
     <script src= "../js/loja.js"></script>
+    <script src= "../js/formloja.js"></script>
 </body>
 </html>

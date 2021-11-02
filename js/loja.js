@@ -1,9 +1,41 @@
 function abrirSenha(){
-    document.getElementById("inputSenhaConfirmacao").style.display= "block";
+    
+    if (document.getElementById("inputSenhaConfirmacao").style.display= "none"){
+        document.getElementById("inputSenhaConfirmacao").style.display= "block";
+        
+    }
+        
 }
 function fecharSenha(){
     document.getElementById("inputSenhaConfirmacao").style.display="none";
 }
+
+function criarAnuncio(){
+
+    anuncios= window.localStorage;
+
+    var conjAnuncios= JSON.parse(anuncios.getItem("conjAnuncios"));
+
+    console.log(conjAnuncios[1]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function abrirFormulario1(){
