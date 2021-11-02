@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>    
-    <script defer src="js/javascript.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/info.css">
 
@@ -57,6 +56,9 @@
         <main class="mdl-layout__content">
 
             <div class= "Box-Grande">
+                
+                
+
                 <div class= "titulo">
 
                     <br>
@@ -68,113 +70,156 @@
 
                 </div>
                 <br>
-                <div class= "infoLixo">
-                    
-                    <h2 class= "subtitulo">
-                        
-                        <br>
-                        Lixo Eletrônico
-                        
-                    </h2>   <br>
 
-                    <div class= "imagens">
-
-                        <img src= "https://s2.glbimg.com/K35yKKouzaBOdA--8Xb8FzndhXc=/0x0:607x342/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/F/i/gLDFtcSEKHpYNm1cq7FA/lixo-eletronico.jpeg">
-                        <img src= "https://www.al.sp.gov.br/repositorio/noticia/N-07-2019/fg236947.jpg">
-                        <img src= "https://www.assespro-mg.org.br/wp-content/uploads/2020/01/img-lixo-site-291-1000x675.jpg">
+                <select id="listaEscolha" name="status_current" onchange=trocarTipoLixo()> 
                     
+                    <option value="">Escolha uma opção</option> 
+                    <option value="LE"> Lixo Eletrônico </option>
+                    <option value="RCC"> Resíduos de construção civil </option> 
+                    <option value="LO">Lixo Orgânico (Óleo/gordura) </option>
+                    <option value="LT">Lixo Tóxico </option>
+                    
+                </select>
+
+                <br>
+
+                <div id= "lixoEletronico" class= "lixoEletronico">
+                    
+                    <div class= "infoLixo">
+                    
+                        <h2 class= "subtitulo">
+                            
+                            <br>
+                            Lixo Eletrônico
+                            
+                        </h2>   <br>
+    
+                        <div class= "imagens">
+    
+                            <img src= "https://s2.glbimg.com/K35yKKouzaBOdA--8Xb8FzndhXc=/0x0:607x342/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/F/i/gLDFtcSEKHpYNm1cq7FA/lixo-eletronico.jpeg">
+                            <img src= "https://www.al.sp.gov.br/repositorio/noticia/N-07-2019/fg236947.jpg">
+                            <img src= "https://www.assespro-mg.org.br/wp-content/uploads/2020/01/img-lixo-site-291-1000x675.jpg">
+                        
+                        </div>
+    
+                        <h4>
+                        
+                        O lixo eletrônico é composto por aparelhos, como diz o nome, eletrônicos, que passaram a não 
+                        funcionar corretamente, seja por conta do tempo ou por alguma falha na manutenção.
+    
+                        Com  as frequentes inovações tecnológicas, podemos encontrar cada vez mais desse tipo de lixo,
+                        pois ao comprar um aparelho novo, normalmente nos desfazemos do antigo. O problema está no 
+                        descarte impróprio desses aparelhos, que não podem ser descartados junto com embalagens ou 
+                        lixo orgânico.
+    
+                        Para que possam ser utilizados quando são vendidos, celulares, por exemplo, precisam de alguns 
+                        materiais que são tóxicos à pessoas e ao ambiente em que vivem, como mercúrio, chumbo, berílio,
+                        etc., além de plásticos e vidros, materiais que demoram muito tempo para sofrerem decomposição.
+                        Portanto, descartar incorretamente esses itens seria por em risco o meio ambiente, contaminando,
+                        a longo prazo, a saúde da população que vive nas proximidades.
+    
+                        Porém, se descartado corretamente, esses materiais poderão ser reutilizados por grandes 
+                        empresas que não possuem uma boa fonte deles, ajudando assim no desenvolvimento tecnológico 
+                        do país.
+                        
+                        </h4>
+                        
+    
                     </div>
 
-                    <h4>
-                    
-                    O lixo eletrônico é composto por aparelhos, como diz o nome, eletrônicos, que passaram a não 
-                    funcionar corretamente, seja por conta do tempo ou por alguma falha na manutenção.
-
-                    Com  as frequentes inovações tecnológicas, podemos encontrar cada vez mais desse tipo de lixo,
-                    pois ao comprar um aparelho novo, normalmente nos desfazemos do antigo. O problema está no 
-                    descarte impróprio desses aparelhos, que não podem ser descartados junto com embalagens ou 
-                    lixo orgânico.
-
-                    Para que possam ser utilizados quando são vendidos, celulares, por exemplo, precisam de alguns 
-                    materiais que são tóxicos à pessoas e ao ambiente em que vivem, como mercúrio, chumbo, berílio,
-                    etc., além de plásticos e vidros, materiais que demoram muito tempo para sofrerem decomposição.
-                    Portanto, descartar incorretamente esses itens seria por em risco o meio ambiente, contaminando,
-                    a longo prazo, a saúde da população que vive nas proximidades.
-
-                    Porém, se descartado corretamente, esses materiais poderão ser reutilizados por grandes 
-                    empresas que não possuem uma boa fonte deles, ajudando assim no desenvolvimento tecnológico 
-                    do país.
-                    
-                    </h4>
-
                 </div>
-                <br> <br> <br>
-                <div class= "infoLixo">
-                    
-                    <h2 class= "subtitulo">
+
+                <div id= "lixoCivil" class= "lixoCivil">
+                    <div class= "infoLixo">
+
+                        <h2 class= "subtitulo">
+
+                            <br>
+                            Entulho de construção civil
+
+                        </h2>   <br>
+
+                        <div class= "imagens">
+
+                            <img src="https://uploads.bemparana.com.br/upload/image/noticia/noticia_576554_img1_cidades-entulho-franklin.jpg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRz-slfNN9mA_gDXcQPOkwf8PjTFMFQZn84Q&usqp=CAU">
+                            <img src="https://www.fimdolixo.com.br/wp-content/uploads/2021/05/residuos-da-construcao.jpg">
                         
-                        <br>
-                        Entulho de construção civil
+                        </div>
 
-                    </h2>   <br>
+                        <h4>
+                            Os resíduos de construção civil são compostos por materiais utilizados em obras civis 
+                            (construção ou reforma de casas, prédios, ruas, etc) (brita, areia, cerâmica, argamassa, 
+                            concreto, madeira, metais, papéis, plásticos, pedras, tijolos, etc)
 
-                    <div class= "imagens">
+                            Esses resíduos, muitas vezes, não recebem a atenção necessária, e acabam resultando em 
+                            problemas para as ruas onde são deixados. Esses entulhos podem, por exemplo, se acumular 
+                            em bueiros e acabar causando enchentes, onde a água pode ser um vetor de doenças, como a 
+                            leptospirose, e também contribuem para a lotação de aterros.
 
-                        <img src="https://uploads.bemparana.com.br/upload/image/noticia/noticia_576554_img1_cidades-entulho-franklin.jpg">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRz-slfNN9mA_gDXcQPOkwf8PjTFMFQZn84Q&usqp=CAU">
-                        <img src="https://www.fimdolixo.com.br/wp-content/uploads/2021/05/residuos-da-construcao.jpg">
-                    
+                            Apesar disso, não causam muitos efeitos negativos diretamente ao meio ambiente, por 
+                            terem características químicas e minerais semelhantes a agregados naturais e ao solo
+
+                            No Brasil, o setor da construção civil é um dos que mais precisa de aperfeiçoamento, por
+                            ser o mais comum e um dos que gera mais problemas para a população
+
+                            Para amenizar o problema, é interessant encaminhamento desses resíduos para postos
+                            de coleta, onde podem ser reaproveitados e reutilizados
+                        </h4>
+
+                    </div>
+                </div>
+
+                <div id= "lixoOrganico" class= "lixoOrganico">
+                    <div class= "infoLixo">
+
+                        <h2 class= "subtitulo">
+
+                            <br>
+                            Lixo orgânico
+
+                        </h2>   <br>
+
+                        <h4>
+
+                            O óleo utilizado na cozinha, muitas vezes, é descartado diretamente pelo ralo da pia, e isso pode causar consequências principalmente para os próprios residentes.
+                            Esse óleo é muitas vezes tratado com indiferença, e descartado pelo próprio ralo da pia, podendo ficar retido dentro dos canos em forma de gordura, o que acaba por
+                            atrair vetores de doenças e impedir a passagem de água, possivelmente causando um entupimento na rede de esgotos. Caso esse óleo, por acaso, não fique nos canos, 
+                            ele acaba em rios e lagos, impedindo a passagem de luz e oxigênio, levando várias espécies marinhas à morte, prejudicando a biodiversidade, ou também, pode acabar
+                            no solo, onde acaba se infiltrando e sendo absorvido pelas plantas ou contaminando os lençois freáticos, tornando-o impenetrável durante as chuvas, o que contribui
+                            para que enchentes aconteçam.
+
+                        </h4>
+
                     </div>
 
-                    <h4>
-                        Os resíduos de construção civil são compostos por materiais utilizados em obras civis 
-                        (construção ou reforma de casas, prédios, ruas, etc) (brita, areia, cerâmica, argamassa, 
-                        concreto, madeira, metais, papéis, plásticos, pedras, tijolos, etc)
+                </div>  
 
-                        Esses resíduos, muitas vezes, não recebem a atenção necessária, e acabam resultando em 
-                        problemas para as ruas onde são deixados. Esses entulhos podem, por exemplo, se acumular 
-                        em bueiros e acabar causando enchentes, onde a água pode ser um vetor de doenças, como a 
-                        leptospirose, e também contribuem para a lotação de aterros.
+                <div id= "lixoToxico" class= "lixoToxico">
 
-                        Apesar disso, não causam muitos efeitos negativos diretamente ao meio ambiente, por 
-                        terem características químicas e minerais semelhantes a agregados naturais e ao solo
+                    <div class= "infoLixo">
 
-                        No Brasil, o setor da construção civil é um dos que mais precisa de aperfeiçoamento, por
-                        ser o mais comum e um dos que gera mais problemas para a população
+                        <h2 class= "subtitulo">
 
-                        Para amenizar o problema, é interessant encaminhamento desses resíduos para postos
-                        de coleta, onde podem ser reaproveitados e reutilizados
-                    </h4>
+                            <br>
+                            Lixo Tóxico
 
-                </div>
-                <br> <br> <br>
-                <div class= "infoLixo">
+                        </h2>   <br>
+                        <h4>
 
-                    <h2 class= "subtitulo">
-                        
-                        <br>
-                        Lixo orgânico
-
-                    </h2>   <br>
-
-                    <h4>
-                        -óleo utilizado para fritar alimentos
-                            > acaba sendo jogado em ralos
-                            > as vezes vedado e jogado em lixo orgânico comum
-                            > esses métodos podem possuir águas, solo e atmosfera
-                            > óleo fica retudo em forma de gordura, podendo atrair vetores de doenças, alem de reter passafem de água e possivelmente causar entupimento da rede de esgoto.
-                            > Tratamento caro de água com óleo
-                            > óleo que acaba em rios e lagos impede a entrada de luz e oxigênio, levando à morte de varias espécies aquáticas
-                            > chega aos solos, sendo absorvido por plantas
-                            > infiltração no solo, contaminando lençois freáticos, tornando o mesmo impenetrável durante chuvas, contribuindo para enchentes
-                            > decomposição do óleo produz gás metano, gás esse do efeito estufa
-
-
-                        O óleo utilizado na cozinha, muitas vezes, é descartado diretamente pelo ralo da pia, 
-                    </h4>
-
-
-                    
+                            O lixo tóxico se refere a pilhas e baterias, tintas, cola, remédios vencidos, lâmpadas fluorescentes, 
+                            inceticidas, etc.
+                            Grande parte das vezes, esse tipo de lixo é descartado incorretamente, pelo motivo de que, as vezes, é
+                            fácil se confundir, por exemplo, jogar pilhas no lixo classificado como "metal", ou qualquer lâmpada no
+                            lixo "vidro", o que prejudica muito a separação desse tipo de resíduo.
+                            As consequências disso são severas: Primeiramente, o lixo tóxico líquido, como é na parte interna da pilha, 
+                            ao vazar, contamina o solo e os lençóis freáticos, prejudicando tanto a agricultura quanto a hidrografia. Como
+                            esse líquido não é biodegradável, torna o dano causado irreparável.
+                            Além disso, na decomposição das pilhas, são encontrados metais pesados, como o cádmio, o chumbo e o mercúrio,
+                            todos perigosos para os humanos, podendo causar mutações genéticas prejudiciais.
+                            
+                            <!-- https://www.dinamicambiental.com.br/blog/reciclagem/conheca-os-perigos-do-descarte-incorreto-de-pilhas/ -->
+                        </h4>
                 </div>
                 
             </div> <br>
@@ -183,8 +228,9 @@
 
     </div>
 
-    
+    <script src= "../js/info.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>   
-    

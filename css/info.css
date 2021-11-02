@@ -1,13 +1,11 @@
 h4{
     margin: 2%;
 }
-h2{
-
-}
 img{
    height: 25vh; 
    margin-left: 5%;
    border-radius: 10px;
+   margin-bottom: 3%;
 }
 
 .Box-Grande{
@@ -17,8 +15,8 @@ img{
     border-radius: 10px;
 }
 .imagens{
-    display:flex;
-    justify-content: space-evenly;
+    float: right;
+    margin-bottom: 2%;
 }
 .introducao{
     margin-top: 2%;
@@ -27,6 +25,22 @@ img{
     display: flex;
     justify-content: center;
 }
-.info-LixoEletronico{
-    
+#listaEscolha{
+    margin-left: 2%;
+}
+.lixoEletronico{
+    display: none;
+
+}
+.lixoCivil{
+    display: none;
+
+}
+.lixoOrganico{
+    display: none;
+
+}
+.lixoToxico{
+    display: none;
+
 }
