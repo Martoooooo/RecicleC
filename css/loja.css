@@ -35,12 +35,17 @@ td{
     margin: 2% 4% 2% 5%;
     
 }
+.anuncios{
+    
+}
 .anuncioUnico{
-    margin: 2% auto;
+    margin: 2% 2%;
     border-style: solid;
     border-color: Black;
     border-radius: 10px;
     width: 280px;
+    float: left;
+
 
 }
 .anuncioUnico img{
@@ -49,6 +54,7 @@ td{
     height: 315px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; 
+    
 
 }
 .botaoPopup{

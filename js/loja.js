@@ -16,22 +16,8 @@ function criarAnuncio(){
 
     var conjAnuncios= JSON.parse(anuncios.getItem("conjAnuncios"));
 
-    console.log(conjAnuncios[1]);
+    console.log(conjAnuncios[0]);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
