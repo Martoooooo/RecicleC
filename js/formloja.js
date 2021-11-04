@@ -10,10 +10,6 @@ function cadastrarItem(){
     var nomeVendedor= $("#nomeVendedor").val();
 
     var nomeProduto= $("#nomeProduto").val();
-    if (nomeProduto == ""){
-        $("#nomeProduto").innerHTML += "<label> Favor informar o nome do produto <label>"
-    }
-
     var valorProduto= $("#valorProduto").val();
     var descricaoProduto= $("#descricaoProduto").val();
     var senhaConfirmacao= $("#senhaConfirmacao").val();
@@ -58,15 +54,19 @@ function criarAnuncio(){
 
     //cria todos os anuncios
     for(var i=0; i< conjAnuncios.length; i++){
-        document.getElementById("anuncios").innerHTML +=   `<div class="anuncioUnico card">
+        console.log(i)
+
+        document.getElementById("anuncios").innerHTML +=   `
+                                                            <div class="anuncioUnico card">
 
                                                                 <img src="https://static.wixstatic.com/media/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.jpg/v1/fill/w_195,h_274,al_c,q_80,usm_0.66_1.00_0.01/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.webp" class="card-img-top" alt="...">
                                                                 <div class="card-body">
 
                                                                     <h5 class="card-title"> ${conjAnuncios[i][3]} </h5>
+                                                                    <h3 class="preco"> ${conjAnuncios[i][4]} </h3>
                                                                     <p class="card-text">${conjAnuncios[i][5]}</p>
 
-                                                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario${[i]})"> Comprar </a>
+                                                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario${i})"> Comprar </a>
 
                                                                 </div>
 
@@ -74,12 +74,12 @@ function criarAnuncio(){
 
                                                             <!--Janela do vendedor-->
 
-                                                            <div id="dadosVendedor${[i]}" class="white_content">
+                                                            <div id="dadosVendedor${i}" class="white_content">
 
                                                                 <div class= "dadosVendedor">
                                                                     <div class="botoesManipPopup">
                                                                         <div>
-                                                                            <button onclick="fecharFormulario${[i]}()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                                                            <button onclick="fecharFormulario${i}()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
 
                                                                         </div>
                                                                         <div> 
@@ -124,11 +124,8 @@ function criarAnuncio(){
                                                                     <input type="password" placeholder="Senha para remover anuncio" name="psw">
 
                                                                 </div>
-
-                                                            </div>`
-
-                                                            console.log(conjAnuncios[i][0]);
-
+                                                                
+                                                            </div>`                                                                         
     }
 
     
