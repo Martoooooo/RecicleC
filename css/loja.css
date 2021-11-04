@@ -1,17 +1,4 @@
-table{
-    margin-top: 1%;
-    margin-bottom: 3%;
-    width: 100%;
-    
-}
-tr{
 
-}
-td{
-    margin-left: 4%;
-    float:left;
-    
-}
 
 .fundo{
     background-color: white;
@@ -78,6 +65,7 @@ td{
 
 }
 .dadosVendedor{
+    
     float: left;
     width: 100%;
 
@@ -135,6 +123,7 @@ td{
 
 
 .black_overlay {
+    
     display: none;
     position: absolute;
     top: 0%;
@@ -149,6 +138,7 @@ td{
 
 }
 .white_content {
+    
     display: none;
     position: absolute;
     top: 25%;
