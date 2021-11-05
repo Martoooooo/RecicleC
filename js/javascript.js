@@ -1,9 +1,17 @@
-function verificarPreenchimento(){
+comentario= window.localStorage;
 
-    var username= document.getElementById("loginUsername").value;
-    if (username= null){
-        console.log("erro, usuário não preenchido");
-    }
-    href="paginas/loja.html"
+function enviarFeedback(){
+
+    var conjFeedbacks= JSON.parse(comentario.getItem("conjFeedbacks")) || [];
+    
+    var feedback= $("#feedbackText").val();
+    
+    var nomeIdentificado= $("#feedbackNome").val();
+    
+    dadosFeedback=[feedback, nomeIdentificado];
+
+    conjFeedbacks.push(dadosFeedback);
+    comentario.setItem("conjFeedbacks", JSON.stringify(conjFeedbacks));
+
+
 }
-
