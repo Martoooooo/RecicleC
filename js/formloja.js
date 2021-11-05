@@ -10,9 +10,7 @@ function cadastrarItem(){
     var nomeVendedor= $("#nomeVendedor").val();
 
     var nomeProduto= $("#nomeProduto").val();
-    if (nomeProduto == ""){
-        $("#nomeProduto").innerHTML += "<label> Favor informar o nome do produto <label>"
-    }
+    
 
     var valorProduto= $("#valorProduto").val();
     var descricaoProduto= $("#descricaoProduto").val();
