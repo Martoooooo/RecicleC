@@ -25,7 +25,10 @@ h4{
     border-style: solid;
     border-color: black;
     background-color: rgba(11, 46, 0, 0.637);
-
+    margin-bottom: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 .inputFeedback{
