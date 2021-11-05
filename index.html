@@ -85,28 +85,27 @@
             </div>
             
             <div class= "divisaoTela">
-                <div class="div-inputs">
-                    <h4 class="Titulo"> Ja possui uma conta? </h4>
-                    <div class= "homescreenLogin">
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">                          
-                            
-                                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">                            
-                            </div>                        
-                        </form>
-                    </div> 
-                    <div class="d-grid gap-2">
-                        <button onclick="verificarPreenchimento()" type="button" class="btn btn-primary btn-lg">Login</button>
-                    </div>
+
+                <div class="feedback inputFeedback">
                         
+                        <h4> Deixe aqui sua opinião</h4>
+                        <div class= "input-group">
+                            <input type="text" class="feedbackID form-control" id="feedbackNome" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <textarea class="feedbackFB form-control" id="feedbackText" aria-label="With textarea"placeholder="Comentário até 150 caracteres..." ></textarea>
+                        </div>
+                        <button onclick= "enviarFeedback()" type="button" class= "botaoEnvioFeedback btn btn-primary"> Enviar feedback </button>
+
                 </div>
             </div>
+
         </main>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script defer src="js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
 
 </html>
