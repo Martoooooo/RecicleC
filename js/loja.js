@@ -13,16 +13,10 @@ function fecharFormulario(anuncio){
     document.getElementById(anuncio).style.display = "none";
 }
 
-
-
 function abrirSenha(campoSenha){
     document.getElementById(campoSenha).style.display= "block";
 
 
-}
-
-function confSenha(senha){
-    
 }
 
 function excluirAnuncio(anuncio, senha, senhaConfirm){
@@ -32,6 +26,7 @@ function excluirAnuncio(anuncio, senha, senhaConfirm){
 
     if(senhaV == senhaConfirm){
         document.getElementById(anuncio).innerHTML= "anuncio excluído";
+
     } else{
         console.log("natan");
     }
