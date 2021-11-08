@@ -1,0 +1,55 @@
+h3{
+    margin-left: 4%;
+}
+h4{
+    margin: 2%;
+}
+img{
+   width: 270px; 
+   margin-left: 5%;
+   border-radius: 10px;
+   margin-bottom: 3%;
+}
+
+.Box-Grande{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.imagens{
+    float: right;
+    margin-bottom: 2%;
+}
+.introducao{
+    margin-top: 2%;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+}
+#listaEscolha{
+    margin-left: 2%;
+}
+.lixoEletronico{
+    display: none;
+
+}
+.lixoCivil{
+    display: none;
+
+}
+.lixoOrganico{
+    display: none;
+
+}
+.lixoToxico{
+    display: none;
+
+}
+.imgRec{
+    
+    height: 270px;
+    width: 270px;
+    margin-right: 2%;
+}
