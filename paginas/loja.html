@@ -84,7 +84,7 @@
                                 Cristal para documentos
                                 <br>
                                 3 bolsos</p>
-                            <a href="#" class="btn btn-primary" onclick="abrirFormulario()"> Comprar </a>
+                            <a href="#" class="btn btn-primary" onclick="abrirFormulario('dadosVendedor')"> Comprar </a>
 
                         </div>
 
@@ -97,7 +97,7 @@
                         <div class= "dadosVendedor">
                             <div class="botoesManipPopup">
                                 <div>
-                                    <button onclick="fecharFormulario()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                    <button onclick="fecharFormulario('dadosVendedor') " type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
 
                                 </div>
                                 <div id= "botaoSenha"> 
@@ -122,8 +122,6 @@
                                 <label> Facebook <br>
                                     <a onclick="location.href='https://www.facebook.com/julia.cruz.50'" class="botaoConexao" >  <img src='https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image'> </a>
                                 </label>
-                                
-                                <!-- src= '' -->
 
                                 <label> Instagram <br>
                                     <a onclick="location.href='https://www.instagram.com/juliarzc/'" class="botaoConexao"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"> </a>
@@ -138,7 +136,7 @@
 
                         <div class="senhaShhh" id= "inputSenhaConfirmacao">
 
-                            <label for="psw"><b>Senha de remoção</b></label>
+                            <label for="psw"><strong>Senha de remoção</strong></label>
                             <input type="password" placeholder="Senha para remover anuncio" name="psw">
 
                         </div>
@@ -150,8 +148,6 @@
             </div>
             
         </main>
-    
-        <!--  -->
 
     <script src= "../js/loja.js"></script>
     <script src= "../js/formloja.js"></script>

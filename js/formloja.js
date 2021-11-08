@@ -47,7 +47,6 @@ function cadastrarItem(){
 }
 
 
-
 function criarAnuncio(){
 
     anuncios= window.localStorage;
@@ -58,17 +57,15 @@ function criarAnuncio(){
     for(var i=0; i< conjAnuncios.length; i++){
         console.log(i)
 
-        document.getElementById("anuncios").innerHTML +=   `
-                                                            <div class="anuncioUnico card">
+        document.getElementById("anuncios").innerHTML +=   `<div class="anuncioUnico card">
 
                                                                 <img src="https://static.wixstatic.com/media/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.jpg/v1/fill/w_195,h_274,al_c,q_80,usm_0.66_1.00_0.01/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.webp" class="card-img-top" alt="...">
                                                                 <div class="card-body">
 
                                                                     <h5 class="card-title"> ${conjAnuncios[i][3]} </h5>
-                                                                    <h3 class="preco"> ${conjAnuncios[i][4]} </h3>
                                                                     <p class="card-text">${conjAnuncios[i][5]}</p>
 
-                                                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario${i})"> Comprar </a>
+                                                                    <a href="#" class="btn btn-primary" onclick="abrirFormulario('dadosVendedor${i}')"> Comprar </a>
 
                                                                 </div>
 
@@ -78,14 +75,14 @@ function criarAnuncio(){
 
                                                             <div id="dadosVendedor${i}" class="white_content">
 
-                                                                <div class= "dadosVendedor">
+                                                                <div class= "dadosVendedor${i}">
                                                                     <div class="botoesManipPopup">
                                                                         <div>
-                                                                            <button onclick="fecharFormulario${i}()" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
+                                                                            <button onclick="fecharFormulario('dadosVendedor${i}')" type="submit" class="botaoFecharPopup btn btn-primary">Fechar</button>
 
                                                                         </div>
                                                                         <div> 
-                                                                            <button onclick="abrirSenha()" type= "submit" class="botaoRemoverAnuncio btn btn-primary">Remover Anuncio</button>
+                                                                            <button onclick="abrirSenha('senha${i}')" type= "submit" class="botaoRemoverAnuncio btn btn-primary">Remover Anuncio</button>
                                                                         </div>
                                                                     </div>
                                                                     <br>
@@ -120,15 +117,15 @@ function criarAnuncio(){
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="senhaShhh" id= "inputSenhaConfirmacao">
+                                                                <div class="senhaShhh" id= "senha${i}">
 
                                                                     <label for="psw"><b>Senha de remoção</b></label>
                                                                     <input type="password" placeholder="Senha para remover anuncio" name="psw">
 
                                                                 </div>
-                                                                
-                                                            </div>`                                                                         
-    }
 
-    
+                                                            </div>`
+
+
+    }    
 }
