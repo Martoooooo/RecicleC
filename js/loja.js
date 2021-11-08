@@ -15,18 +15,28 @@ function fecharFormulario(anuncio){
 
 
 
-function abrirSenha(anuncio, botaoDelete){
+function abrirSenha(campoSenha){
+    document.getElementById(campoSenha).style.display= "block";
+
+
+}
+
+function confSenha(senha){
     
-    document.getElementById(anuncio).style.display= "block";
-    document.getElementById(botaoDelete).style.display= "block";
-
 }
 
+function excluirAnuncio(anuncio, senha, senhaConfirm){
 
+    
+    var senhaV= $("#" + senha).val()
 
-
-function excluirAnuncio(anuncio){
-    if (conjAnuncios[i][9] ==  document.getElementById("inputSenhaConfirmacao").value){
-        document.getElementById(anuncio).innerHTML= "";
+    if(senhaV == senhaConfirm){
+        document.getElementById(anuncio).innerHTML= "anuncio excluído";
+    } else{
+        console.log("natan");
     }
+    
+
+    
 }
+

@@ -46,6 +46,12 @@ function cadastrarItem(){
     }
 }
 
+anuncios= window.localStorage;
+
+var conjAnuncios= JSON.parse(anuncios.getItem("conjAnuncios"));
+
+
+
 
 function criarAnuncio(){
 
@@ -56,8 +62,8 @@ function criarAnuncio(){
     //cria todos os anuncios
     for(var i=0; i< conjAnuncios.length; i++){
         console.log(i)
-
-        document.getElementById("anuncios").innerHTML +=   `<div class="anuncioUnico card">
+        
+        document.getElementById("anuncios").innerHTML +=   `<div class="anuncioUnico anuncioUnico${i} card" id="anuncioUnico${i}">
 
                                                                 <img src="https://static.wixstatic.com/media/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.jpg/v1/fill/w_195,h_274,al_c,q_80,usm_0.66_1.00_0.01/830d71_d544e83561f341df83afe2f41ca996ff~mv2_d_2149_3024_s_2.webp" class="card-img-top" alt="...">
                                                                 <div class="card-body">
@@ -120,11 +126,14 @@ function criarAnuncio(){
                                                                 <div class="senhaShhh" id= "senha${i}">
 
                                                                     <label for="psw"><b>Senha de remoção</b></label>
-                                                                    <input type="password" placeholder="Senha para remover anuncio" name="psw">
+                                                                    <input type="password" id= "senhaConf${i}" placeholder="Senha para remover anuncio" name="psw">
+                                                                    <button onclick='excluirAnuncio("anuncioUnico${i}", "senhaConf${i}", "${conjAnuncios[i][6]}"); fecharFormulario("dadosVendedor${i}")' class="btn btn-primary"> Excluir </button>
 
                                                                 </div>
 
                                                             </div>`
+                                                            
+
 
 
     }    
