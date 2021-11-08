@@ -1,3 +1,6 @@
+h3{
+    margin-left: 4%;
+}
 h4{
     margin: 2%;
 }
@@ -43,4 +46,10 @@ img{
 .lixoToxico{
     display: none;
 
+}
+.imgRec{
+    
+    height: 270px;
+    width: 270px;
+    margin-right: 2%;
 }
