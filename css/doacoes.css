@@ -1,0 +1,29 @@
+.fundo{
+    background-color:white;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+
+}
+.bannerOng {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.bannerOng img{
+    height: 230.5px;
+    width: 225px;
+    border-radius:10px;
+}
+.bannerOng h3{
+    margin-left: 4%;
+}
+.bannerOng h5{
+    margin-left: 2%;
+}
+.acesso{
+    margin-left: 5%;
+}
