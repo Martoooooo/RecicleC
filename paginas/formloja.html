@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recicle-C - Loja</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -54,56 +54,93 @@
             
         </div>
         <main>
+
             <div class= "fundo">
-              
-              <div class="input-group mb-3">
-                <input type="file" class="form-control" id="inputGroupFile02">
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
-              </div>
 
-              <div class= "infoProduto mb-3">
-                <div class="mb-3 emailVendedor" id="emailVendedor">
-                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-              
-                <div class="mb-3 telefoneVendedor" id="telefoneVendedor">
-                  <label for="exampleFormControlInput1" class="form-label">Telefone para contato</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(99) 9 9999-9999">
-                </div>
-              </div>
+              <form class="row g-3">
 
-              <div class="infoProduto mb-3">
-
-                <div class= "inputInfoProduto nomeProduto mb-3">
-                  <label for="exampleFormControlInput2" class="form-label">Nome do Produto</label>
-                  <input type="input" class="form-control" id="exampleFormControlInput2" placeholder="Produto">
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                  <input type="file" class="form-control" id="inputGroupFile02">
                 </div>
 
-                <div class= "inputInfoProduto precoProduto mb-3">
-                  <label for="exampleFormControlInput2" class="form-label">Preço</label>
-                  <input type="input" class="form-control" id="exampleFormControlInput2" placeholder= "R$0,00">
-                </div>
-
-              </div>
-
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Descrição do produto</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Detalhes sobre o produto"></textarea>
-              </div>
-
-              <div class= "senhaConfirmacao mb-3" id="senhaConfirmacao">
-                <label for="exampleFormControlInput2" class="form-label">Senha para confirmação *</label>
-                <input type="password" class="form-control" id="exampleFormControlInput2" placeholder= "Senha para confirmar / remover o anuncio">
+                <div class= "infoProduto mb-3">
+                  <div class="mb-3 emailVendedor">
+                      <label for="emailVendedor" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="emailVendedor" placeholder="name@example.com">
+                  </div>
                 
-              </div>
+                  <div class="mb-3 telefoneVendedor">
+                    <label for="telefoneVendedor" class="form-label">Telefone para contato</label>
+                    <input type="text" class="form-control" id="telefoneVendedor" placeholder="(99) 9 9999-9999" required>
+                  </div>
+                </div>
 
-              <h6 class="help">*Essa senha servirá para você remover o anúncio caso necessário</h6>
+                <div class="mb-3 nomeVendedor">
+                  <label for="nomeVendedor" class="form-label">Nome do vendedor</label>
+                  <input type="text" class="form-control" id="nomeVendedor" placeholder="Nome" required>
+                </div>
 
+                <div class="infoProduto mb-3">
 
-              <div>
-                <button onclick="location.href='loja.html'" type="submit" class="btn btn-primary">Cadastrar Produto</button>
-              </div>
+                  <div class= "inputInfoProduto nomeProduto mb-3">
+                    <label for="nomeProduto" class="form-label">Nome do Produto</label>
+                    <input type="text" class="form-control" id="nomeProduto" placeholder="Produto" required>
+                  </div>
+
+                  <div class= "inputInfoProduto precoProduto mb-3">
+                    <label for="valorProduto" class="form-label">Preço</label>
+                    <input type="text" class="form-control" id="valorProduto" placeholder= "R$0,00" required>
+                  </div>
+
+                </div>
+
+                <div class="mb-3">
+                  <label for="descricaoProduto" class="form-label">Descrição do produto</label>
+                  <textarea class="form-control" id="descricaoProduto" rows="3" placeholder="Detalhes sobre o produto" required ></textarea>
+                </div>
+
+                <div class= "senhaConfirmacao mb-3">
+                  <label for="senhaConfirmacao" class="form-label">Senha para confirmação *</label>
+                  <input type="password" class="form-control" id="senhaConfirmacao" placeholder= "Senha para confirmar / remover o anuncio" required>
+
+                </div>
+                <div>
+                  <label> Alternativas de contato <br>
+                      
+                    <div class= "espacamento">
+                      <label> Facebook </label>
+                      <input type="link" placeholder="Facebook" id="facebook">
+                    </div>  
+                    <div class= "espacamento">
+                      <label> Instagram </label>
+                      <input type="link" placeholder="Instagram" id="instagram">
+                    </div>
+                    <div class= "espacamento">
+                      <label> Instagram </label>
+                      <input type="link" placeholder="Instagram (Empresa)" id="instagramEmpresa">  
+                    </div>
+                    <div class= "espacamento">
+                      <label> Site (Empresa) </label>
+                      <input type="link" placeholder="Link do site" id="site">
+                    </div>
+
+                    </label>
+                </div>
+                <br>
+                <h6 class="help">*Essa senha servirá para você remover o anúncio caso desejado</h6>
+              </form>
+
+                <div class="botaoConfirmacao" id="">
+                  
+                  <button onclick="cadastrarItem()" type="submit" class="btn btn-primary">Cadastrar Produto</button>
+                  <label id="avisos"></label>
+                </div>
+              
               
             </div>
         </main>
+    <script src= "../js/formloja.js"></script>
+    <script src= "../js/jquery.js"></script>
+</body>
+</html>
